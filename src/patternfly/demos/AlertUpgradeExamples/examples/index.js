@@ -2,9 +2,9 @@ import React from 'react';
 import Documentation from '@siteComponents/Documentation';
 import Example from '@siteComponents/Example';
 import alertUpgradeExamplesSimpleExampleRaw from '!raw!./alert-upgrade-examples-simple-example.hbs';
-import alertUpgradeExamplesComplexExampleRaw from '!raw!./alert-upgrade-examples-complex-example.hbs';
+import alertUpgradeExamplespf4Raw from '!raw!./alert-upgrade-examples-pf4.hbs';
 import AlertupgradeexamplesSimpleExample from './alert-upgrade-examples-simple-example.hbs';
-import AlertupgradeexamplesComplexExample from './alert-upgrade-examples-complex-example.hbs';
+import Alertupgradeexamplespf4 from './alert-upgrade-examples-pf4.hbs';
 import alertUpgradeExamplesComplexExampleDoc from '../docs/alert-upgrade-examples-complex.md';
 import docs from '../docs/code.md';
 import '../styles.scss';
@@ -13,7 +13,7 @@ export const Docs = docs;
 
 export default () => {
   const alertUpgradeExamplesSimpleExample = AlertupgradeexamplesSimpleExample();
-  const alertUpgradeExamplesComplexExample = AlertupgradeexamplesComplexExample();
+  const alertUpgradeExamplespf4 = Alertupgradeexamplespf4();
 
   return (
     <Documentation docs={Docs}>
@@ -26,10 +26,10 @@ export default () => {
       </Example>
       <Example
         heading="Patternfly4 Alert (combines notification)"
-        handlebars={alertUpgradeExamplesComplexExampleRaw}
+        handlebars={alertUpgradeExamplespf4Raw}
         docs={alertUpgradeExamplesComplexExampleDoc}
       >
-        {alertUpgradeExamplesComplexExample}
+        {alertUpgradeExamplespf4}
       </Example>
     </Documentation>
   );
