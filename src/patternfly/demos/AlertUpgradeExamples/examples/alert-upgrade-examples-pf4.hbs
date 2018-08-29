@@ -9,4 +9,40 @@
       <p>This is a description of the notification content.</p>
     </div>
   {{/alert}}
+  <br>
+
+  {{#> alert pf-c-alert--Modifier="pf-m-danger" pf-c-alert--AriaLabel="Danger Notification"}}
+    <div aria-hidden="true" class="pf-c-alert__icon">
+      <i class="fas fa-exclamation-circle"></i>
+    </div>
+    <div class="pf-c-alert__body">
+      <h4 class="pf-c-alert__title">
+      <span class="pf-u-sr-only">Danger: </span> Danger notification title</h4>
+      <p>This is a description of the notification content.</p>
+    </div>
+{{/alert}}
+<br>
+
+{{#> alert pf-c-alert--Modifier="pf-m-warning" pf-c-alert--AriaLabel="Warning Notification"}}
+  <div aria-hidden="true" class="pf-c-alert__icon">
+    <i class="fas fa-exclamation-triangle"></i>
+  </div>
+  <div class="pf-c-alert__body">
+    <h4 class="pf-c-alert__title">
+    <span class="pf-u-sr-only">Warning: </span> Warning notification title</h4>
+    <p>This is a description of the notification content.</p>
+  </div>
+{{/alert}}
+<br>
+
+{{#> alert pf-c-alert--Modifier="pf-m-info" pf-c-alert--AriaLabel="Information Notification"}}
+  <div aria-hidden="true" class="pf-c-alert__icon">
+    <i class="fas fa-info-circle"></i>
+  </div>
+  <div class="pf-c-alert__body">
+    <h4 class="pf-c-alert__title">
+    <span class="pf-u-sr-only">Info: </span> Info notification title</h4>
+    <p>This is a description of the notification content.</p>
+  </div>
+{{/alert}}
 {{/alert-upgrade-examples}}
