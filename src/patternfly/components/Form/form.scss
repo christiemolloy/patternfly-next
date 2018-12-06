@@ -10,8 +10,7 @@
   --pf-c-form__label--FontWeight: var(--pf-global--FontWeight--normal);
   --pf-c-form__label--FontSize: var(--pf-global--FontSize--sm);
   --pf-c-form__label--LineHeight: var(--pf-global--LineHeight--sm);
-  --pf-c-form__label--PaddingTop: var(--pf-global--spacer--sm);
-  --pf-c-form__label--PaddingBottom: var(--pf-global--spacer--sm);
+  --pf-c-form__label--PaddingY: var(--pf-global--spacer--sm);
   --pf-c-form__label--m-disabled--Color: var(--pf-global--disabled-color--100);
 
   // required labels
@@ -108,7 +107,7 @@
     }
 
     &.pf-m-disabled {
-      color: var(--pf-c-form__label--m-disabled--Color);
+      --pf-c-form__label--Color: var(--pf-c-form__label--m-disabled--Color);
     }
 
     &.pf-m-disabled:hover {
