@@ -14,10 +14,10 @@
   --pf-c-dropdown__toggle--BorderXColor: var(--pf-global--BorderColor--light-200);
   --pf-c-dropdown__toggle--BorderBottomColor: var(--pf-global--BorderColor--dark);
   --pf-c-dropdown__toggle--Color: var(--pf-global--Color--100);
+
+  // hover,expanded
   --pf-c-dropdown__toggle--hover--BorderBottomColor: var(--pf-global--active-color--100);
   --pf-c-dropdown__toggle--expanded--BorderBottomWidth: var(--pf-global--BorderWidth--md);
-
-  // --pf-c-dropdown__toggle--expanded--BorderBottomColor: var(--pf-global--active-color--100);
   --pf-c-dropdown__toggle--m-plain--BorderColor: transparent;
   --pf-c-dropdown__toggle--m-plain--Color: var(--pf-global--Color--200);
   --pf-c-dropdown__toggle--m-plain--hover--Color: var(--pf-global--Color--100);
