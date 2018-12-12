@@ -54,9 +54,6 @@ export default () => {
       <Example heading="Progress Simple" handlebars={progressSimpleExampleRaw}>
         {progressSimpleExample}
       </Example>
-      <Example heading="Progress Without Description" handlebars={progressNoDescriptionExampleRaw}>
-        {progressNoDescriptionExample}
-      </Example>
       <Example heading="Progress Small" handlebars={progressSmallExampleRaw}>
         {progressSmallExample}
       </Example>
@@ -80,6 +77,9 @@ export default () => {
       </Example>
       <Example heading="Progress Outside Failure" handlebars={progressOutsideFailureExampleRaw}>
         {progressOutsideFailureExample}
+      </Example>
+      <Example heading="Progress Without Description" handlebars={progressNoDescriptionExampleRaw}>
+        {progressNoDescriptionExample}
       </Example>
       <Example heading="Progress Without Measure" handlebars={progressNoMeasureExampleRaw}>
         {progressNoMeasureExample}
