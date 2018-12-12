@@ -2,6 +2,7 @@ import React from 'react';
 import Documentation from '@siteComponents/Documentation';
 import Example from '@siteComponents/Example';
 import progressSimpleExampleRaw from '!raw!./progress-simple-example.hbs';
+import progressNoDescriptionExampleRaw from '!raw!./progress-no-description-example.hbs';
 import progressSmallExampleRaw from '!raw!./progress-small-example.hbs';
 import progressLargeExampleRaw from '!raw!./progress-large-example.hbs';
 import progressOutsideExampleRaw from '!raw!./progress-outside-example.hbs';
@@ -14,6 +15,7 @@ import progressNoMeasureExampleRaw from '!raw!./progress-no-measure-example.hbs'
 import progressNoMeasureFailureExampleRaw from '!raw!./progress-no-measure-failure-example.hbs';
 import progressDynamicExampleRaw from '!raw!./progress-dynamic-example.hbs';
 import ProgressSimpleExample from './progress-simple-example.hbs';
+import ProgressNoDescriptionExample from './progress-no-description-example.hbs';
 import ProgressSmallExample from './progress-small-example.hbs';
 import ProgressLargeExample from './progress-large-example.hbs';
 import ProgressOutsideExample from './progress-outside-example.hbs';
@@ -33,6 +35,7 @@ export const Docs = docs;
 
 export default () => {
   const progressSimpleExample = ProgressSimpleExample();
+  const progressNoDescriptionExample = ProgressNoDescriptionExample();
   const progressSmallExample = ProgressSmallExample();
   const progressLargeExample = ProgressLargeExample();
   const progressOutsideExample = ProgressOutsideExample();
@@ -50,6 +53,9 @@ export default () => {
     <Documentation docs={Docs} heading={headingText}>
       <Example heading="Progress Simple" handlebars={progressSimpleExampleRaw}>
         {progressSimpleExample}
+      </Example>
+      <Example heading="Progress Without Description" handlebars={progressNoDescriptionExampleRaw}>
+        {progressNoDescriptionExample}
       </Example>
       <Example heading="Progress Small" handlebars={progressSmallExampleRaw}>
         {progressSmallExample}

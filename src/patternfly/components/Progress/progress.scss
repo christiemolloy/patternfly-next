@@ -14,7 +14,6 @@
   --pf-c-progress__measure--m-inside--m-success--Color: var(--pf-global--Color--dark-100); // the measure still needs to be dark when in success state
   --pf-c-progress__measure--m-inside--FontSize: var(--pf-global--FontSize--sm);
   --pf-c-progress__measure--m-outside--FontSize: var(--pf-global--FontSize--sm);
-  --pf-c-progress__bar--Height: var(--pf-global--spacer--md);
   --pf-c-progress__bar--Height--sm: var(--pf-global--spacer--sm);
   --pf-c-progress__bar--Height--lg: var(--pf-global--spacer--lg);
   --pf-c-progress__bar-overlay--Opacity: .2; // one-off change in opacity to allow progress bar to automatically coordinate with the indicator color
@@ -42,6 +41,11 @@
 
   &.pf-m-sm {
     --pf-c-progress__bar--Height: var(--pf-c-progress__bar--Height--sm); // set height to the small height
+  }
+
+  // No Description or Status Modifier
+  &.pf-m-nodescription {
+    grid-gap: 0;
   }
 
   // an inside-style progress component shows the measure inside the indicator
