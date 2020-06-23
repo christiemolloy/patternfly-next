@@ -67,8 +67,8 @@
   --pf-c-data-list__cell--cell--PaddingTop: 0;
   --pf-c-data-list__cell--cell--md--PaddingTop: var(--pf-global--spacer--lg);
   --pf-c-data-list__cell--m-icon--cell--PaddingTop: var(--pf-global--spacer--lg);
-  --pf-c-data-list__cell--MaxWidth: none;
-  --pf-c-data-list__cell--MinWidth: 0;
+  --pf-c-data-list__cell--MinWidth: initial;
+  --pf-c-data-list__cell--MaxWidth: 100%;
   --pf-c-data-list__cell--Overflow: visible;
   --pf-c-data-list__cell--TextOverflow: clip;
   --pf-c-data-list__cell--WhiteSpace: normal;
@@ -191,11 +191,13 @@
 .pf-c-data-list__cell,
 .pf-c-data-list__text {
   &.pf-m-truncate {
-    --pf-c-data-list__cell--MinWidth: var(--pf-c-data-list__cell--m-truncate--MinWidth);
+    --pf-c-data-list__cell--MinWidth: var(--pf-c-data-list__cell--m-truncate--MaxWidth);
     --pf-c-data-list__cell--MaxWidth: var(--pf-c-data-list__cell--m-truncate--MaxWidth);
     --pf-c-data-list__cell--Overflow: hidden;
     --pf-c-data-list__cell--TextOverflow: ellipsis;
     --pf-c-data-list__cell--WhiteSpace: nowrap;
+
+    white-space: nowrap;
   }
 
   &.pf-m-break-word {
@@ -406,6 +408,8 @@
 
 // Data list text
 .pf-c-data-list__text {
+  display: block;
+  min-width: var(--pf-c-data-list__cell--MinWidth);
   max-width: var(--pf-c-data-list__cell--MaxWidth);
   overflow: var(--pf-c-data-list__cell--Overflow);
   text-overflow: var(--pf-c-data-list__cell--TextOverflow);

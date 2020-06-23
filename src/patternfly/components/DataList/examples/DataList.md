@@ -747,7 +747,7 @@ When a list item includes more than one block of content, it can be difficult fo
             This text will wrap to the next line because it has the default behavior of the data list cell.
           </span>
           {{#> data-list-text data-list-text--modifier="pf-m-truncate"}}
-            This is data list text, you can apply `pf-m-truncate` directly to the text.
+            This is data list text, you can apply `pf-m-truncate` directly to the text. This is data list text, you can apply `pf-m-truncate` directly to the text.
           {{/data-list-text}}
         {{/data-list-cell}}
         {{#> data-list-cell}}
