@@ -67,14 +67,16 @@
   --pf-c-data-list__cell--cell--PaddingTop: 0;
   --pf-c-data-list__cell--cell--md--PaddingTop: var(--pf-global--spacer--lg);
   --pf-c-data-list__cell--m-icon--cell--PaddingTop: var(--pf-global--spacer--lg);
-  --pf-c-data-list__cell--MinWidth: initial;
+
+  // --pf-c-data-list__cell--MinWidth: initial;
   --pf-c-data-list__cell--MaxWidth: 100%;
   --pf-c-data-list__cell--Overflow: visible;
   --pf-c-data-list__cell--TextOverflow: clip;
   --pf-c-data-list__cell--WhiteSpace: normal;
   --pf-c-data-list__cell--WordBreak: normal;
   --pf-c-data-list__cell--m-truncate--MaxWidth: 100%;
-  --pf-c-data-list__cell--m-truncate--MinWidth: calc(20ch);
+
+  // --pf-c-data-list__cell--m-truncate--MinWidth: calc(20ch);
 
   @media screen and (min-width: $pf-global--breakpoint--md) {
     --pf-c-data-list__cell--cell--PaddingTop: var(--pf-c-data-list__cell--cell--md--PaddingTop);
@@ -191,7 +193,8 @@
 .pf-c-data-list__cell,
 .pf-c-data-list__text {
   &.pf-m-truncate {
-    --pf-c-data-list__cell--MinWidth: var(--pf-c-data-list__cell--m-truncate--MaxWidth);
+    // --pf-c-data-list__cell--MinWidth: var(--pf-c-data-list__cell--m-truncate--MinWidth);
+
     --pf-c-data-list__cell--MaxWidth: var(--pf-c-data-list__cell--m-truncate--MaxWidth);
     --pf-c-data-list__cell--Overflow: hidden;
     --pf-c-data-list__cell--TextOverflow: ellipsis;
@@ -350,7 +353,8 @@
 .pf-c-data-list__cell {
   flex: 1;
   grid-column: 1 / -1;
-  min-width: var(--pf-c-data-list__cell--MinWidth);
+
+  // min-width: var(--pf-c-data-list__cell--MinWidth);
   max-width: var(--pf-c-data-list__cell--MaxWidth);
   padding-top: var(--pf-c-data-list__cell--PaddingTop);
   padding-bottom: var(--pf-c-data-list__cell--PaddingBottom);
@@ -409,7 +413,8 @@
 // Data list text
 .pf-c-data-list__text {
   display: block;
-  min-width: var(--pf-c-data-list__cell--MinWidth);
+
+  // min-width: var(--pf-c-data-list__cell--MinWidth);
   max-width: var(--pf-c-data-list__cell--MaxWidth);
   overflow: var(--pf-c-data-list__cell--Overflow);
   text-overflow: var(--pf-c-data-list__cell--TextOverflow);
