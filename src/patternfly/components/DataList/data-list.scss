@@ -353,15 +353,8 @@
 .pf-c-data-list__cell {
   flex: 1;
   grid-column: 1 / -1;
-
-  // min-width: var(--pf-c-data-list__cell--MinWidth);
-  max-width: var(--pf-c-data-list__cell--MaxWidth);
   padding-top: var(--pf-c-data-list__cell--PaddingTop);
   padding-bottom: var(--pf-c-data-list__cell--PaddingBottom);
-  overflow: var(--pf-c-data-list__cell--Overflow);
-  text-overflow: var(--pf-c-data-list__cell--TextOverflow);
-  word-break: var(--pf-c-data-list__cell--WordBreak);
-  white-space: var(--pf-c-data-list__cell--WhiteSpace);
 
   @media screen and (min-width: $pf-global--breakpoint--md) {
     &:not(:last-child) {
@@ -413,7 +406,10 @@
 // Data list text
 .pf-c-data-list__text {
   display: block;
+}
 
+.pf-c-data-list__text,
+.pf-c-data-list__cell {
   // min-width: var(--pf-c-data-list__cell--MinWidth);
   max-width: var(--pf-c-data-list__cell--MaxWidth);
   overflow: var(--pf-c-data-list__cell--Overflow);
