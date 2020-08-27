@@ -75,8 +75,7 @@
   --pf-c-data-list__cell--WhiteSpace: normal;
   --pf-c-data-list__cell--WordBreak: normal;
   --pf-c-data-list__cell--m-truncate--MaxWidth: 100%;
-
-  // --pf-c-data-list__cell--m-truncate--MinWidth: calc(20ch);
+  --pf-c-data-list__cell--m-truncate--MinWidth: 5ch;
 
   @media screen and (min-width: $pf-global--breakpoint--md) {
     --pf-c-data-list__cell--cell--PaddingTop: var(--pf-c-data-list__cell--cell--md--PaddingTop);
@@ -193,8 +192,7 @@
 .pf-c-data-list__cell,
 .pf-c-data-list__text {
   &.pf-m-truncate {
-    // --pf-c-data-list__cell--MinWidth: var(--pf-c-data-list__cell--m-truncate--MinWidth);
-
+    --pf-c-data-list__cell--MinWidth: var(--pf-c-data-list__cell--m-truncate--MinWidth);
     --pf-c-data-list__cell--MaxWidth: var(--pf-c-data-list__cell--m-truncate--MaxWidth);
     --pf-c-data-list__cell--Overflow: hidden;
     --pf-c-data-list__cell--TextOverflow: ellipsis;
@@ -405,7 +403,7 @@
 
 // Data list text
 .pf-c-data-list__text {
-  display: block;
+  display: inline-block;
 }
 
 .pf-c-data-list__text,
